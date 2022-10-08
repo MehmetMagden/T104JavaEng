@@ -28,7 +28,6 @@ public class C06_Questions {
 
             System.out.println("Equilateral Triangle");
 
-
         }
 
 
