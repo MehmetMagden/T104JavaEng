@@ -18,10 +18,12 @@ public class C05_Ternary {
 
         int number = scan.nextInt();
 
-        System.out.println((number%5==0)? "this number is a multiple of 5" :"number is not a multiple of 5");
 
 
-        String resultOfTernary = (number%5==0)? "this number is a multiple of 5" :"number is not a multiple of 5";
+        System.out.println(     number%5==0? "this number is a multiple of 5" :"number is not a multiple of 5");
+
+
+        String resultOfTernary = number%5==0 ? "this number is a multiple of 5" :"number is not a multiple of 5";
 
 
     }

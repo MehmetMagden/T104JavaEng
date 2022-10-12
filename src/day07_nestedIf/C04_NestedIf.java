@@ -17,45 +17,47 @@ public class C04_NestedIf {
         boolean hasCustomerCard = false;
         double totalPrice = 0;
 
-
+        // ctrl + alt + L
 
         if (hasCustomerCard == true) {
 
-            if ( numberOfProducts>10){
+            if (numberOfProducts > 10) {
 
                 // %20 discount
-                totalPrice =price * numberOfProducts*0.8;
+                totalPrice = price * numberOfProducts * 0.80;
                 System.out.println(totalPrice);
 
-            }if ( numberOfProducts<=10 ) {
+            } else if (numberOfProducts <= 10) {
 
                 // %15 discount
-                totalPrice =price * numberOfProducts*0.85;
+                totalPrice = price * numberOfProducts * 0.85;
                 System.out.println(totalPrice);
+
+
+                totalPrice = 100 * 10 * 0.85;
+
 
             }
 
 
-        }else {
+        } else {
 
-            if ( numberOfProducts>10){
+            if (numberOfProducts > 10) {
 
                 // %15 discount
-                totalPrice =price * numberOfProducts*0.85;
+                totalPrice = price * numberOfProducts * 0.85;
                 System.out.println(totalPrice);
 
-            }if ( numberOfProducts<=10 ) {
+            }
+            if (numberOfProducts <= 10) {
 
                 // %10 discount
-                totalPrice =price * numberOfProducts*0.90;
+                totalPrice = price * numberOfProducts * 0.90;
                 System.out.println(totalPrice);
             }
 
 
         }
-
-
-
 
 
     }
