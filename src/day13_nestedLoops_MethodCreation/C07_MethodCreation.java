@@ -7,7 +7,10 @@ public class C07_MethodCreation {
 
     public static void main(String[] args) {
 
-        addition(15,20);
+        int number = 23;
+        int number2 = 44;
+
+        addition(number,number2);
 
     }
 
