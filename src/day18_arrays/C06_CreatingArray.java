@@ -3,7 +3,7 @@ package day18_arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class C06_Questions {
+public class C06_CreatingArray {
 
     public static void main(String[] args) {
 

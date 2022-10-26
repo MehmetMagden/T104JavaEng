@@ -2,7 +2,7 @@ package day18_arrays;
 
 import java.util.Arrays;
 
-public class C03_Questions {
+public class C03_AddTwoToAllVariables {
 
     public static void main(String[] args) {
         //Question 1- Create a method that adds 2 to all variables of an array , returns the array

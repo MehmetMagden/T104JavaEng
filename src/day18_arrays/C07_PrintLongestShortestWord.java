@@ -1,6 +1,6 @@
 package day18_arrays;
 
-public class C07_Questions {
+public class C07_PrintLongestShortestWord {
 
 
     public static void main(String[] args) {

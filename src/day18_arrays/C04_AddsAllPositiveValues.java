@@ -1,6 +1,6 @@
 package day18_arrays;
 
-public class C04_Questions {
+public class C04_AddsAllPositiveValues {
 
 
     public static void main(String[] args) {

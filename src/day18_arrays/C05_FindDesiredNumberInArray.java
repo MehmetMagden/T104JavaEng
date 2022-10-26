@@ -1,6 +1,6 @@
 package day18_arrays;
 
-public class C05_Questions {
+public class C05_FindDesiredNumberInArray {
 
     public static void main(String[] args) {
 
