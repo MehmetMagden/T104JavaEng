@@ -9,7 +9,7 @@ public class C08_AddingNewValue {
         // how to add another element to array
 
 
-        int [] abc = { 3,5,3,6,8,5,3,6};
+        int [] abc = { 3,5,3,6,8,5,3,6}; // length is 8
 
         int numberToAdd =10;
 
@@ -19,14 +19,14 @@ public class C08_AddingNewValue {
 
     public static void addNewValueToArray(int [] arr,int numberToAdd){
 
-        int[] longerArr = new int[arr.length+1];
+        int[] longerArr = new int[arr.length+1];  // created an  array with (8+1) length
 
         for (int i = 0; i <arr.length ; i++) {
             longerArr[i]=arr[i];
 
         }
         longerArr[longerArr.length-1]=numberToAdd;
-        System.out.println(Arrays.toString(longerArr));
+        System.out.println(Arrays.toString(longerArr));  // [3, 5, 3, 6, 8, 5, 3, 6, 10]
     }
 
 }
