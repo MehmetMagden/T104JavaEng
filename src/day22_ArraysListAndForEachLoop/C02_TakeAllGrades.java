@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class C02_Questions {
+public class C02_TakeAllGrades {
 
 
     public static void main(String[] args) {
@@ -14,9 +14,7 @@ public class C02_Questions {
 
 
         System.out.println("takeAllGradesFromTeacher() = " + takeAllGradesFromTeacher()); // returned method will be printed
-
     }
-
     public static List<Integer> takeAllGradesFromTeacher() {
 
         Scanner scan = new Scanner(System.in); // to take values fromthe user (scan object)
