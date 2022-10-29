@@ -19,11 +19,11 @@ public class C08_removeAll {
         List<String> toDelete =new ArrayList<>();
         toDelete.add("Hasan");
         toDelete.add("Huseyin");
-        System.out.println("toDelete = " + toDelete);
+        System.out.println("toDelete = " + toDelete); // [Hasan, Huseyin]
 
         names.removeAll(toDelete);
 
-        System.out.println("names = " + names);
+        System.out.println("names = " + names); // [Ali, Veli]
 
     }
 
