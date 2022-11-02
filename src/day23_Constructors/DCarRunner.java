@@ -5,14 +5,16 @@ public class DCarRunner {
     public static void main(String[] args) {
 
         //Let's create an object from DCar Class
-        DCar firstCar = new DCar();
 
+        DCar firstCar = new DCar();
 
         System.out.println(firstCar.advertNo);
         System.out.println(firstCar.brand);
         System.out.println(firstCar.model);
         System.out.println(firstCar.fuel);
         System.out.println(firstCar.price);
+
+
 
         firstCar.advertNo =1001;
         firstCar.brand = "BMW";
