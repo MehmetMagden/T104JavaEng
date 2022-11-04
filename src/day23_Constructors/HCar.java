@@ -2,38 +2,30 @@ package day23_Constructors;
 
 public class HCar {
 
-
-
     int advertNo;
     String brand = " not assigned";
     String model = " not assigned";
     String fuel ;
     int price ;
-
     static int numberOfTires = 4;
+
     public HCar (){
 
     }
 
     public HCar(int advNo, String brnd, String mdl){
-
         advertNo=advNo;
         brand=brnd;
         model=mdl;
-
-
     }
 
 
     public HCar (int adNo,String brd , String mdl, String fl, int prc){
-
         advertNo=adNo;
         brand=brd;
         model=mdl;
         fuel=fl;
         price=prc;
-
-
     }
 
     public String toString() {

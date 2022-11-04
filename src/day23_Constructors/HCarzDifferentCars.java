@@ -1,6 +1,6 @@
 package day23_Constructors;
 
-public class HCarDifferentCars {
+public class HCarzDifferentCars {
 
     public static void main(String[] args) {
 
