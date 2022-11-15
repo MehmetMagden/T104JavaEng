@@ -2,9 +2,11 @@ package day12_forLoops;
 
 public class C01_ForLoops {
 
+    static public String str ="Java\n";
+
     public static void main(String[] args) {
 
-        String str ="Java\n";
+
         System.out.println(str.repeat(10));
 
         System.out.println("Java");

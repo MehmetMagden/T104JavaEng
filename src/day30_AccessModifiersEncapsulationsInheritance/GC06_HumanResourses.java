@@ -11,5 +11,4 @@ public class GC06_HumanResourses extends GC05_HospitalClassGrandGrandParent {
     public  boolean canRetire= true;
 
 
-
 }
