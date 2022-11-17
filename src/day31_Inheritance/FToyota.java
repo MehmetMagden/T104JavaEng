@@ -13,6 +13,10 @@ public class FToyota extends ECars{
     protected String madeIn =" not assigned";
     protected int speed = 130;
 
+    // protected is for inheritance and anychild can reach them
+    // if we do not mention any access modifiers they will be default
+    // if it is default they are not reachable from outside of the package
+
 
 
 }

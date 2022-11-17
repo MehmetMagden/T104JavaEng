@@ -7,6 +7,10 @@ public class GCorolla extends FToyota {
         System.out.println("GCorolla cons ran");
     }
 
+    GCorolla(int a){
+        System.out.println("2. const");
+    }
+
     String model = "Corolla";
     String madeIn = "Turkey";
 
