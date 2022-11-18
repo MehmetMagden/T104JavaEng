@@ -13,6 +13,7 @@ public class Corolla extends BToyota {
     }
 
     Corolla(){
+
         System.out.println("corolla Const without parameter");
     }
 

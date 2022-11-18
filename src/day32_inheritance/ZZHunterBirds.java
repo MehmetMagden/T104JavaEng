@@ -1,5 +1,8 @@
 package day32_inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ZZHunterBirds extends ZZBirds{
 
     ZZAnimalKingdom eagle1 = new ZZHunterBirds();
@@ -11,7 +14,12 @@ public class ZZHunterBirds extends ZZBirds{
     ZZHunterBirds eagle3 =new ZZHunterBirds();
 
 
+    ZZAnimalKingdom eagle4= new ZZBirds();
 
-    StringBuilder sb = new StringBuilder();
+    ZZAnimalKingdom eagle5 = new ZZAnimalKingdom();
+
+
+
+
 
 }
