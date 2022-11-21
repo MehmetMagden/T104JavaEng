@@ -1,6 +1,4 @@
-package day34_overriding_polimorphism;
-
-import java.util.ArrayList;
+package day34_overriding_polymorphism;
 
 public class DChild extends CParent {
 

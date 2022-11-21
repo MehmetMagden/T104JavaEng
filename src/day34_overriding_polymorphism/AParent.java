@@ -1,4 +1,4 @@
-package day34_overriding_polimorphism;
+package day34_overriding_polymorphism;
 
 public class AParent {
 
