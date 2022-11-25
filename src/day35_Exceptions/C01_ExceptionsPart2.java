@@ -17,11 +17,8 @@ public class C01_ExceptionsPart2 {
         while (continuee){
 
             try {
-
                 System.out.println("Please enter a number");
                 enteredNumber= scan.nextInt();
-
-
             } catch (Exception e) {
                 continue;
             }
