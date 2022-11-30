@@ -28,6 +28,8 @@ public class C01_LinkedLists {
 
         List<String> ll2 = new LinkedList<>();
 
+
+
         ll2.add("R");
         System.out.println(ll2.add("Z")); // true
 
