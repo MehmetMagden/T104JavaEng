@@ -191,4 +191,60 @@ public class MapStorage {
 
         return exampleMap;
     }
+
+    public static void studentsInOrder(Map<Integer, String> studentMap) {
+
+        // Please try to print all student in order
+        // Branch, class, name, surname, School Number (the order of the information)
+        String value ="";
+        String[] arr;
+
+        String desiredValue="";
+
+        // to receive the netural order we created a set from TreeSet (Constructor) concrete Class
+        Set<String> theOrder = new TreeSet<>();
+
+        // to reach all elements of the map, We used MapEntrySet Method
+        Set<Map.Entry<Integer,String>> studentEntrySet =   studentMap.entrySet();
+
+        // by using this mapEnty, we chould be able use forEach loop
+        for (Map.Entry<Integer,String> eachEntry: studentEntrySet
+             ) {
+
+            value=eachEntry.getValue(); // Ayse-Can-10-H
+            arr=value.split("-");   // [Ayse, Can, 10, H]
+            desiredValue = arr[3]+"-"+ arr[2]+"-"+arr[0]+"-"+arr[1]+"-"+ eachEntry.getKey();
+
+            // added desiredValue to set
+            theOrder.add(desiredValue);
+
+        }
+
+        // printed the set
+        System.out.println(theOrder);
+
+    }
+
+    public static  Map<Integer,String> makeSurnamesAllCapitalsWithEntrySet(Map<Integer, String> studentMap) {
+
+        // the entrySet
+        Set<Map.Entry<Integer,String>> studentEntrySet =studentMap.entrySet();
+
+        // variables that We will use inside the loop
+        String value ="";
+        String [] arr ;
+        String desiredString ="";
+
+        //ForeachLoop, we use the entrySet
+        for (Map.Entry<Integer,String> eachEntry: studentEntrySet
+        ) {
+            value = eachEntry.getValue(); // Veli-Cem-11-M
+            arr = value.split("-"); // [Veli, Cem, 11, M]
+
+            arr[1]= arr[1].toUpperCase();
+            desiredString = arr[0]+"-"+ arr[1]+"-"+ arr[2]+"-"+ arr[3];
+            eachEntry.setValue(desiredString);
+        }
+        return  studentMap;
+    }
 }
