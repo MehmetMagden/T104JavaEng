@@ -1,7 +1,6 @@
 package day43_maps;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MapStorage {
 
@@ -106,5 +105,90 @@ public class MapStorage {
         return exampleMap;
 
 
+    }
+
+
+    public static void callNamesSurnamesClassesFromSameBranch(Map<Integer, String> exampleMap, String branchLetter) {
+
+        // taken values from the exampleMap
+        Collection<String> keyValues=exampleMap.values();  // [Ali-Can-10-H, Veli-Cem-11-M, Ali-Cem-11-H, Ayse-Can-10-H, Ayse-Cem-11-M, Fatma-Han-10-K]
+        System.out.println(keyValues);
+
+        // to reach each valueve used for each loop
+        for (String eachValue:keyValues
+        ) {
+            // splited the each value to work on it
+            String[] splitedValue = eachValue.split("-");
+
+            // if we find a match
+            if (splitedValue[3].equals(branchLetter)){
+
+                // we modified the output
+                String toprint = splitedValue[0]+ " "+
+                        splitedValue[1]+ " "+
+                        splitedValue[2];
+
+                // we printed it
+                System.out.println(toprint);
+            }
+        }
+    }
+
+    public static void printStudentsNameSurnameClassBetweenNumbers(Map<Integer, String> exampleMap, int startingNo, int endingNo) {
+
+       Set<Integer> keysSet= exampleMap.keySet();
+        System.out.println(keysSet); // [101, 102, 103, 104, 105, 106]
+
+        // to reach each key
+        for (Integer eachKey: keysSet
+             ) {
+
+            //Checking the keys if they are the wanted ones
+            if (eachKey>=startingNo && eachKey<=endingNo){
+                // if it is we took the value of the key
+                String value=exampleMap.get(eachKey); // Ali-Can-10-H
+                //split the value
+                String[] valueArr= value.split("-");// [Ali, Can, 10, H]
+                // prepare the String toprint
+                String requestedString= valueArr[0]+ " " +valueArr[1]+" " +valueArr[2];
+                System.out.println(requestedString);
+            }
+        }
+
+
+    }
+
+    public static void printAllStudentsNoNameSurname(Map<Integer, String> exampleMap) {
+
+        Set<Integer> keySet=exampleMap.keySet();
+        System.out.println(keySet);
+
+        for (Integer eachKey:keySet
+             ) {
+
+            String value= exampleMap.get(eachKey); // Ali-Can-10-H
+            String[] valueArr = value.split("-"); // [Ali, Can, 10, H]
+
+            String desiredString = eachKey + " "+ valueArr[0]+" "+ valueArr[1];
+            System.out.println(desiredString);
+        }
+
+
+    }
+
+    public static Map<Integer,String> makeSurnamesAllCapitals(Map<Integer, String> exampleMap) {
+
+        Set<Integer> keySet=exampleMap.keySet();
+
+        for (Integer eachKey:keySet
+             ) {
+            String valueStr=exampleMap.get(eachKey);
+            String [] valueArr= valueStr.split("-"); //Veli-Cem-11-M
+            valueArr[1]=valueArr[1].toUpperCase();
+            String desiredValue = valueArr[0]+"-"+valueArr[1]+"-"+valueArr[2]+"-"+valueArr[3];
+            exampleMap.put(eachKey,desiredValue);
+        }
+
+        return exampleMap;
     }
 }
